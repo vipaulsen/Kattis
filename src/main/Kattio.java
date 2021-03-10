@@ -1,5 +1,4 @@
-package main;
-/* Simple yet moderately fast I/O routines.
+package main;/* Simple yet moderately fast I/O routines.
 
   Example usage:
 

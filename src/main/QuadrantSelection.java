@@ -1,5 +1,7 @@
 package main;
 
+import main.Kattio;
+
 public class QuadrantSelection {
     public static void main(String[] args) {
         Kattio kattio = new Kattio(System.in, System.out);
