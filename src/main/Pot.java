@@ -1,17 +1,17 @@
 package main;
 
-import java.util.Scanner;
-
 public class Pot {
     public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
-        int nrAmount = scan.nextInt();
+        Kattio io = new Kattio(System.in, System.out);
+        int nrAmount = io.getInt();
         int sum = 0;
-        int current = 0;
+        int current;
         for(int i = 1; i <= nrAmount; i++) {
-            current = scan.nextInt();
-            sum += Math.pow(current / 10, current % 10);
+            current = io.getInt();
+            int base = current/10;
+            sum += Math.pow(base, current % 10);
         }
-        System.out.println(sum);
+        io.print(sum);
+        io.close();
     }
 }
