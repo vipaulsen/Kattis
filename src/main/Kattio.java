@@ -1,4 +1,5 @@
-package main;/* Simple yet moderately fast I/O routines.
+package main;
+/* Simple yet moderately fast I/O routines.
 
   Example usage:
 
@@ -37,10 +38,16 @@ import java.io.PrintWriter;
 import java.io.OutputStream;
 
 class Kattio extends PrintWriter {
+    public Kattio(){
+        super(new BufferedOutputStream(System.out));
+        r = new BufferedReader(new InputStreamReader(System.in));
+    }
+
     public Kattio(InputStream i) {
         super(new BufferedOutputStream(System.out));
         r = new BufferedReader(new InputStreamReader(i));
     }
+
     public Kattio(InputStream i, OutputStream o) {
         super(new BufferedOutputStream(o));
         r = new BufferedReader(new InputStreamReader(i));
