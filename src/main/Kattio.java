@@ -90,7 +90,7 @@ class Kattio extends PrintWriter {
                 }
                 token = st.nextToken();
             } catch (IOException e) {
-                System.out.println("something went wrong");
+                System.exit(-1);
             }
         return token;
     }
