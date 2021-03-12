@@ -14,7 +14,6 @@ public class BatterUp {
                 bases+=add;
             else
                 atBats--;
-
         }
 
         System.out.println(bases/atBats);
