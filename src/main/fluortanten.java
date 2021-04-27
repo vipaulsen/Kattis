@@ -30,7 +30,7 @@ public class fluortanten {
     }
 
     private static int maxHappiness(ArrayList<Integer> children, int bjornPos, int current) {
-        ArrayList<Integer> tmpArray = (ArrayList<Integer>) children.clone();
+        ArrayList<Integer> tmpArray = new ArrayList<>(children);
         int happySum = 0;
         tmpArray.remove(bjornPos);
         tmpArray.add(current,0);
